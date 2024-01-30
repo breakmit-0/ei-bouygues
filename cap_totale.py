@@ -39,4 +39,7 @@ for x in range(N):
         
     res[x] = total
 
-print(N, res)
+print("secteur, capacite_mbps")
+for i in range(N):
+    sec = data["Secteur"][i]
+    print(f"{sec}, {res[i]:.5f}")

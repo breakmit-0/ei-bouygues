@@ -1,0 +1,15 @@
+
+A l'année objectif
+B l'année long terme
+
+filtrer les options
+    - qui couvrent la demande en A
+    
+si aucune ne convient, ajouter un site et recommencer
+
+filter les options
+    - qui sont utilisés a 80% en B
+
+si aucune option ne convient, prendre l'option qui couvre A la moins chère
+
+prendre le plus rentable parmi les options filtrées
