@@ -15,6 +15,10 @@ bandes_5g = strategie.bandes_5g
 bandes = bandes_4g + bandes_5g
 
 
+def sorted_strats():
+    return list(sorted(strats, key=lambda x: -fitness(x)))
+
+
 import time
 import datetime
 def ts(s):

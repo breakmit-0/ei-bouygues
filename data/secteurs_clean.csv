@@ -1,4 +1,4 @@
-,Site,Secteur,Nb Secteurs,X,Y,Code INSEE,unite,700 MHz,800 MHz,1800 MHz,2100 MHz,2600 MHz,3500 MHz,trafic
+,Site,secteur,Nb Secteurs,X,Y,Code INSEE,unite,700 MHz,800 MHz,1800 MHz,2100 MHz,2600 MHz,3500 MHz,trafic
 0,T70730,T70730A,3,332710,2132198,17028,LA ROCHELLE,False,True,True,True,False,False,44.0
 1,T70730,T70730B,3,332710,2132198,17028,LA ROCHELLE,False,True,True,True,False,False,42.1
 2,T70730,T70730C,3,332710,2132198,17028,LA ROCHELLE,False,True,True,True,False,False,20.4
