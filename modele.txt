@@ -1,0 +1,2 @@
+t_min = 1529272800 
+modele = np.exp(a)*(x-min_time)/1000000+np.exp(b)*np.exp(-c*(x-min_time)/1000000)+d 
