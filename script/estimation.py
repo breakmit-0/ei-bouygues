@@ -7,10 +7,13 @@ from scipy import stats
 import time
 import datetime
 
+
+# prédiction linéaire du trafic global
+
 def ts(s):
     return time.mktime(datetime.datetime.strptime(s, "%d/%m/%Y").timetuple())
 
-data = pd.read_csv("clean.csv", delimiter=",", skiprows=0)
+data = pd.read_csv("data/clean.csv", delimiter=",", skiprows=0)
 data = data[["tstamp", "trafic_mbps"]]
 
 grouped = data.groupby("tstamp", as_index=False).sum()

@@ -1,18 +1,8 @@
 #!/usr/bin/python3
-
 import numpy as np
 import pandas as pd 
-from calcul import largeur_to_mbps
 
-caps = pd.read_csv("capacites.csv")
-# modeles = pd.read_csv("modeles.csv")
-secteurs = pd.read_csv("secteurs.csv")
-
-N = len(caps.index)
-# assert(N == len(modeles.index))
-
-def modele(a,b,c,d):
-    return lambda t: a + np.exp(b)*x + np.exp(c - d*x)
+from lib.calcul import largeur_to_mbps
 
 
 bandes_4g = ["700", "800", "1800", "2100", "2600"]
@@ -62,10 +52,6 @@ def fitness(strat):
 
 sorted_strats = list(sorted(strategies, key=lambda x: -fitness(x)))
 
-
-print("strategie, prix, debit, fitness")
-for s in sorted_strats:
-    print(f"{s},{cout(s)},{debit(s):.3f},{fitness(s):.3f}")
-
-# for i in range(N):
-#     pass
+# print("strategie, prix, debit, fitness")
+# for s in sorted_strats:
+#     print(f"{s},{cout(s)},{debit(s):.3f},{fitness(s):.3f}")
