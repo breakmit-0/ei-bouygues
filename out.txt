@@ -1,0 +1,4 @@
+rvalue = 0.9830958485629366
+equation : y = 1.588354127193356e-05 * t + -23701.842042088247
+prediction 2030 = 6373 mbps
+prediction 2024 = 3365 mbps
