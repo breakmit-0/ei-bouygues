@@ -39,4 +39,4 @@ for x in range(N):
         
     res[x] = total
 
-print(res)
+print(N, res)

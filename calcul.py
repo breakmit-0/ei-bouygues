@@ -16,9 +16,6 @@ mbits_par_s = 2.73*1e-6 * re_utiles_par_s
 largeur_bande_utile_mhz = 10
 efficacite_mbps_par_mhz = mbits_par_s / largeur_bande_utile_mhz
 
-
-print(efficacite_mbps_par_mhz)
-
 def largeur_to_mbps(bande, mode = "4g"):
     mul = 1
     if mode == "5g":
