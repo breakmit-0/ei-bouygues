@@ -28,5 +28,5 @@ for i in range(N):
 
     t = np.linspace(lib.t_min, lib.ts("01/01/2030"))
     plt.plot(t, m(t))
-    plt.savefig(f"images/out/{s}.png")
-    plt.clf()
+    #plt.savefig(f"images/out/{s}.png")
+    #plt.clf()
