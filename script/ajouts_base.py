@@ -46,7 +46,7 @@ def find_bext_ex(ant, p3, cap):
     if cap + lib.debit("site") < p3:
         return "site"
 
-    strats = list(filter(ant.est_valide, lib.sorted_strats()))[1:] # elever l'option d'un site
+    strats = list(filter(ant.est_valide, lib.sorted_strats()))[1:] # enlever l'option d'un site
     opts = filter(lambda x: cap + lib.debit_total(x) >= p3, powerset(strats))
     return list(min(opts, key=lib.cout_total, default=["site"]))
 

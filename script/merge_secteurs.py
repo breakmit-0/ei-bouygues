@@ -13,7 +13,7 @@ for x in strats['strategie']:
     if eval(x) == ["site"]:
         total_sites += 1
 
-print(f"nb_sites = {total_sites}")
+print(f"{total_sites}")
 
 
 joined = secteurs.merge(strats, how="inner", on="secteur")
