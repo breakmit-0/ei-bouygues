@@ -20,3 +20,4 @@ out/budget.txt: out/strat_site.csv script/budget.py
 
 out/nb_site.txt out/strat_site.csv: out/strat_secteur.csv script/merge_secteurs.py
 	script/merge_secteurs.py > out/nb_site.txt
+

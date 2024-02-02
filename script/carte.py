@@ -25,7 +25,7 @@ sites = pd.read_csv("out/strat_site.csv").merge(sites, how="inner", on="site")
 
 sites["strategie"] = sites["strategie"].map(lambda x: 3*lib.debit_total(eval(x)))
 
-sites["delta"] = (sites[pred]- sites["capacite_mbps"])
+sites["delta"] = (sites[pred] - sites["capacite_mbps"])
 
 
 print(sites["delta"])
